@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color: white;
+			color: black;
+		}
+		
+		header, footer {
+			background-color: white;
+			color: black;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		.square {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			border: 1px solid black;
+		}
+		
+		.green {
+			background-color: green;
+			top: 10px;
+			left: 10px;
+		}
+		
+		.red {
+			background-color: red;
+			bottom: 10px;
+			right: 10px;
+		}
+	</style>
+	<script>
+		function setColor() 
+        {
+			var date = new Date();
+			var hour = date.getHours();
+			if (hour >= 6 && hour > 18) 
+            {
+				document.body.style.backgroundColor = "white";
+				document.body.style.color = "black";
+				document.getElementsByTagName("header")[0].style.backgroundColor = "white";
+				document.getElementsByTagName("header")[0].style.color = "black";
+				document.getElementsByTagName("footer")[0].style.backgroundColor = "white";
+				document.getElementsByTagName("footer")[0].style.color = "black";
+				document.getElementById("square").classList.remove("red");
+				document.getElementById("square").classList.add("green");
+			} 
+            else 
+            {
+				document.body.style.backgroundColor = "black";
+				document.body.style.color = "white";
+				document.getElementsByTagName("header")[0].style.backgroundColor = "black";
+				document.getElementsByTagName("header")[0].style.color = "white";
+				document.getElementsByTagName("footer")[0].style.backgroundColor = "black";
+				document.getElementsByTagName("footer")[0].style.color = "white";
+				document.getElementById("square").classList.remove("green");
+				document.getElementById("square").classList.add("red");
+			}
+		}
+	</script>
+</head>
+<body onload="setColor()">
+	<header>This is the header</header>
+	<div id="square" class="square"></div>
+	<footer>This is the footer</footer>
+</body>
+</html>

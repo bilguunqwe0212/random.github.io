@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+			var floors = 9;
+			var entrances = 3;
+			var families_per_floor = 4;
+			var total_doors = floors * entrances * families_per_floor;
+            var door_number = window.prompt("haalganii dugaar:");
+		door_number = parseInt(door_number.replace(/\D/g, ''));
+		if (door_number <= 0 || door_number > total_doors) 
+        {
+			alert("tiim ail baihgui");
+		} else {
+			var entrance_number = Math.ceil(door_number / (families_per_floor * floors));
+			var floor_number = Math.ceil((door_number - (entrance_number - 1) * (families_per_floor * floors)) / families_per_floor);
+			var apartment_number = (door_number - 1) % families_per_floor + 1;
+			alert( door_number + "-deh haalga " + entrance_number + "-r ortsnii " + floor_number + "-r davhariin " + apartment_number + "-doh ail");
+		}
+	
+    </script>
+</head>
+</html>

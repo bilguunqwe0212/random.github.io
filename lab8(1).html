@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+			var name = window.prompt("neree hel:");
+		name = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+		var reversed = "";
+		for (var i = name.length - 1; i >= 0; i--) 
+        {
+			reversed += name[i];
+		}
+		if (name === reversed) {
+			alert("palindrome.");
+		} else {
+			alert("not palindrome.");
+		}
+		
+
+		
+	</script>
+</head>
+</html>
