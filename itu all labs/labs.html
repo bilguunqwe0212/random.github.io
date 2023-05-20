@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>buh lab</title>
+           <link rel="stylesheet" href="labs.css"> 
+    </head>
+    <body>
+        <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul>
+                <li style= "--i:0;"><a href="#">Lab1</a></li>
+                <li style="--i:0;"><a href="lab2.html">Lab2</a></li>
+                <li style= "--i:0;"><a href="lab3.html">Lab3</a></li>
+                <li style= "--i:0;"><a href="lab4.html">Lab4</a></li>
+                <li style= "--i:0;"><a href="#">Lab5</a></li>
+                <li style= "--i:0;"><a href="lab6.html">Lab6</a></li>
+                <li style= "--i:0;"><a href="lab7.html">Lab7</a></li>
+                <li style= "--i:0;"><a href="#">Lab8</a></li>
+                <li style= "--i:0;"><a href="#">Lab9</a></li>
+                <li style= "--i:0;"><a href="#">Lab10</a></li>
+            </ul>
+        </div>
+        <script>
+         let navigation = document.querySelector('.navigation');
+            document.querySelector('.toggle').onclick = function()
+            {
+                this.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

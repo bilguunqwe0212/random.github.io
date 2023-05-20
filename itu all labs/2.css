@@ -1,0 +1,31 @@
+
+
+.navbar {
+    display: inline-block;
+    width: 100%;
+    background: grey;
+    text-align: center;
+    background: rgb(146, 146, 243);
+}
+.navbar a {
+    position: relative;
+    float: right;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.navbar img {
+    width: 60px;
+    position: relative;
+    float: left;
+    padding: 10px;
+}
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+
+

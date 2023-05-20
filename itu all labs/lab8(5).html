@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.square 
+        {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			border: 1px solid black;
+		}
+		.green 
+        {
+			background-color: green;
+			top: 10px;
+			left: 10px;
+		}
+		.red 
+        {
+			background-color: red;
+			bottom: 10px;
+			right: 10px;
+		}
+	</style>
+	<script>
+		function setColor() 
+        {
+			var date = new Date();
+			var hour = date.getHours();
+			if (hour >= 6 && hour < 18) 
+            {
+				document.getElementById("square").classList.remove("red");
+				document.getElementById("square").classList.add("green");
+			} 
+            else 
+            {
+				document.getElementById("square").classList.remove("green");
+				document.getElementById("square").classList.add("red");
+			}
+		}
+	</script>
+</head>
+<body onload="setColor()">
+	<div id="square" class="square"></div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="2.css" />
+<head>
+	<title>My Website</title>
+</head>
+<body style="background-color: white; margin: 0; padding: 0;">
+	<header style="height:100px;background-color: rgb(24, 24, 211); color: black;  display: flex; align-items: center;">
+        <h1 style="position:relative; left:200px;font-size: 36px; margin: 0;">Пормд тавтай морилно уу.</h1>
+		<img src="chess.png" style="width:200px;height:100px; position:relative; left:-450px;">
+        
+    </header>
+    
+	<nav style="background-color:rgb(146, 146, 243); color: white;height:50px; padding: 5px;">
+		<navbar class="navbar">
+		<ul style="margin: 0; padding: 0; list-style: none;">
+			<li style="font-size:25px;font-weight: bold;display: inline-block; margin: 0 10px;"><a href="#" style="color: rbg(255,255,255); text-decoration: none; padding: 5px; border-radius: 5px; ">Нүүр</a></li>
+			<li style="font-size:25px;font-weight: bold;display: inline-block; margin: 0 10px;"><a href="#" style="color: rbg(255,255,255); text-decoration: none; padding: 5px; border-radius: 5px; ">Бидний тухай</a></li>
+			<li style="font-size:25px;font-weight: bold;display: inline-block; margin: 0 10px;"><a href="#" style="color: rbg(255,255,255); text-decoration: none; padding: 5px; border-radius: 5px; ">Шилэн данс</a></li>
+			<li style="font-size:25px;font-weight: bold;display: inline-block; margin: 0 10px;"><a href="#" style="color: rbg(255,255,255); text-decoration: none; padding: 5px; border-radius: 5px; ">Элсэлт</a></li>
+			<li style="font-size:25px;font-weight: bold;display: inline-block; margin: 0 10px;"><a href="#" style="color: rbg(255,255,255); text-decoration: none; padding: 5px; border-radius: 5px; ">Бусад</a></li>
+		</ul>
+	</navbar>
+	</nav>
+	<main style="padding: 20px; text-align: center;">
+		<form style="width: 400px; margin: 0 auto; background-color: #ffffff; padding: 20px; box-shadow: 0px 0px 10px #888888;">
+			<label style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="lastName">Овог</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" type="text" id="lastName" name="lastName"  pattern="[A-Z][a-zA-Z]*"required>
+			
+			<label style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="firstName">Нэр</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" type="text" id="firstName" name="firstName"  pattern="[A-Z][a-zA-Z]*" required>
+			
+			<label style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="age">Нас</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" type="number" id="age" name="age" pattern="\d{1,2}" title="Нас 1-ээс 99 хооронд байх ёстой." required>
+			
+			<label style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="gender">Хүйс</label>
+			<select style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" id="gender" name="gender" required>
+				<option value="">Хүйсээ сонгоно уу.</option>
+				<option value="male">Эр</option>
+				<option value="female">Эм</option>
+			</select>
+			
+			<label style="display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;text-align: left;" for="dob">Төрсөн огноо</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" type="date" id="dob" name="dob" required>
+			
+			<label style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="completed-school">Төгссөн сургууль</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;"  placeholder="1-р сургууль" type="school"required>
+			
+			
+			<label style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="completed-school">Аймаг/хот</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" type="city" placeholder="Улаанбаатар" pattern="[A-Z][a-zA-Z]*" required>
+		  
+			<label  style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="completed-school">Сум/Дүүрэг</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;"type="sum" placeholder="Хан-Уул" pattern="[A-Z][a-zA-Z]*" required>
+		  
+			<label  style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="completed-school">И-мэйл</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;"type="email" placeholder="name@gmail.com"  required> (name@gmail.com)
+		  
+			<label style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="completed-school">Нууц үг</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" type="password" placeholder="12345678" required>
+		  
+			<label style="text-align: left;display: block; font-size: 18px; ; margin-bottom: 10px;" ">Утасны дугаар</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;"  type="tel" placeholder="(###) ####-####" pattern="\(\d{3}\)+\d{4}-\d{4}" required> ###########
+		  
+			<label  style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="completed-school">Элсэн суралцаж буй сургууль</label>
+			<select style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" type="school" placeholder="Монгол Улсын Их Сургууль" required>
+				<option value="">Сургуулиа сонгоно уу.</option>
+				<option value="male">МУИС</option>
+				<option value="female">ШУТИС</option>
+				<option value="male">АШУИС</option>
+				<option value="female">ХАИС</option>
+				<option value="male">СЭЗИС</option>
+				<option value="female">ХУИС</option>
+			</select>
+			<label style="text-align: left;display: block; font-size: 18px; color: #4a4a4a; margin-bottom: 10px;" for="completed-school">Мэргэжил</label>
+			<input style="width: 100%; padding: 10px; font-size: 18px; border: 1px solid #dbdbdb; border-radius: 4px; margin-bottom: 20px;" type="text" required>
+		  
+			<input type="submit" value="Submit">
+		  </form>
+       
+	</main>
+	<footer style="height:50px; background-color: rgb(146, 146, 243); color: white; padding: 10px; text-align: center;">
+		<navbar class="navbar">
+		<ul style="margin: 0; padding: 0; list-style: none;">
+			<li style="font-size:25px;font-weight: bold;display: inline-block; margin: 0 10px;"><a href="#" style="color: rbg(255,255,255); text-decoration: none; padding: 5px; border-radius: 5px; ">Холбоо барих</a></li>
+			<li style="font-size:25px;font-weight: bold;display: inline-block; margin: 0 10px;"><a href="#" style="color: rbg(255,255,255); text-decoration: none; padding: 5px; border-radius: 5px; ">Бусад холбоосууд</a></li>
+			<li style="font-size:25px;font-weight: bold;display: inline-block; margin: 0 10px;"><a href="#" style="color: rbg(255,255,255); text-decoration: none; padding: 5px; border-radius: 5px; ">Бидний тухай</a></li>
+		</ul>
+		<navbar/>
+		
+	</footer>
+</body>
+</html>
