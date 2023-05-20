@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exchange.css">
+    <title>Currency calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <select name="" id="selection" onchange="setCurrency()">
+                <option value="USD">USD</option>
+                <option value="EURO">EURO</option>
+                <option value="PAUND">PAUND</option>
+                <option value="WON">WON</option>
+                <option value="YEN">YEN</option>
+                <option value="YAN">YUAN</option><br>
+            </select>
+            <input type="text" name="output1" id="output1" value="currency" disabled><br>
+            <input type="text" id="input1" disabled>
+            <div class="numbers">
+            <input type="button" value="1" onclick="display('1')">
+            <input type="button" value="2" onclick="display('2')">
+            <input type="button" value="3" onclick="display('3')"><br>
+            <input type="button" value="4" onclick="display('4')">
+            <input type="button" value="5" onclick="display('5')">
+            <input type="button" value="6" onclick="display('6')"><br>
+            <input type="button" value="7" onclick="display('7')">
+            <input type="button" value="8" onclick="display('8')">
+            <input type="button" value="9" onclick="display('9')"><br>
+            <input type="button" value="C" onclick="clr()"> 
+            <input type="button" value="0" onclick="display('0')">
+            <input type="button" value="OK" onclick="calculate()"><br>
+        </div>
+            <input type="text" name="" id="input2" disabled>
+        </div>  
+    </div>
+    <script>
+        function display(val){
+            document.getElementById("input1").value +=val;
+        }
+        function clr(){
+            document.getElementById("input1").value = "";
+            document.getElementById("input2").value = "";
+            document.getElementById("output1").value = "";
+
+        }
+        function setCurrency(){
+            exchangeArray = [3470.29, 3826.29, 4376.38, 2.63, 25.89, 502.07];
+            currency = document.getElementById("selection").value;
+            switch(currency){
+                case "USD":
+                document.getElementById("output1").value = "1 USD = " + exchangeArray[0];
+                    break;
+                case "EURO":
+                document.getElementById("output1").value = "1 EURO = " + exchangeArray[1]
+                    break;
+                case "PAUND":
+                document.getElementById("output1").value = "1 PAUND = " + exchangeArray[2]
+                    break;
+                case "WON":
+                document.getElementById("output1").value = "1 WON = " + exchangeArray[3]
+                    break;
+                case "YEN":
+                document.getElementById("output1").value = "1 YEN = " + exchangeArray[4]
+                    break;
+                case "YAN":
+                document.getElementById("output1").value = "1 YUAN = " + exchangeArray[5]
+                    break;
+            }
+            return currency;
+        }
+        function calculate(){
+            
+                money = document.getElementById("input1").value;
+            currency = setCurrency();
+            switch(currency){
+                case "USD":
+                    document.getElementById("input2").value = money * exchangeArray[0];
+                    break;
+                case "EURO":
+                    document.getElementById("input2").value = money * exchangeArray[1];
+                    break;
+                case "PAUND":
+                    document.getElementById("input2").value = money * exchangeArray[2];
+                    break;
+                case "WON":
+                    document.getElementById("input2").value = money * exchangeArray[3];
+                    break;
+                case "YEN":
+                    document.getElementById("input2").value = money * exchangeArray[4];
+                    break;
+                case "YUAN":
+                    document.getElementById("input2").value = money * exchangeArray[5];
+                    break;
+            }
+        } 
+            
+        
+    </script>
+</body>
+</html>

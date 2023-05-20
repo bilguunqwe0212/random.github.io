@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Hangman Game</h1>
+		<p id="question"></p>
+		<div id="word"></div>
+		<p id="guesses"></p>
+		<form>
+			<label for="letter">Enter a letter:</label>
+			<input type="text" id="letter" maxlength="1">
+			<button type="button" onclick="guess()">Guess</button>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

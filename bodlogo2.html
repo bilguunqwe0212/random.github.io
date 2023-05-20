@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+			var num = window.prompt("toogoo oruul");
+			num = parseInt(num.replace(/\D/g, ''));
+			var sum = 0;
+			while (num > 0) 
+            {
+				sum += num % 10;
+				num = Math.floor(num / 10);
+			} 
+			alert("tsipriin niilberр: " + sum);
+    </script>
+</head>
+</html>

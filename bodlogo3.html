@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+			var d = window.prompt("zaigaa oruul: ");
+			distance = parseInt(d.replace(/\D/g, ''));
+			var wolf_speed = 25;
+			var rabbit_speed = 18; 
+			var wolf_time = d/ wolf_speed; 
+			var rabbit_time = d / rabbit_speed; 
+			var total_time = wolf_time + rabbit_time;
+			var minutes = Math.floor(total_time * 60); 
+			var seconds = Math.floor((total_time * 3600) % 60); 
+			alert("chono tuulaig barihad " + minutes + " minute " + seconds + " second bolno.");
+    </script>
+</head>
+</html>

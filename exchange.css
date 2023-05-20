@@ -1,0 +1,72 @@
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 40px;
+        background:gray;
+    }
+
+.main{
+    width: 50%;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+    border: 2px black inset;
+}
+
+.numbers input{
+    width: 72px;
+    height: 56px;
+    margin: 8px;
+    background-color: black;
+    border: 2px rgb(0, 0, 0) inset;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 24px;
+    color: azure;
+}
+
+#input1{
+    background-color: antiquewhite;
+    border: 2px black inset;
+    width: 250px;
+    height: 36px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+#input2{
+    background-color: antiquewhite;
+    border: 2px black inset;
+    width: 250px;
+    height: 36px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+#output1{
+    background-color: antiquewhite;
+    border: 2px black inset;
+    width: 180px;
+    height: 36px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+select{
+    width: 50px;
+    height: 36px;
+    border-radius: 10px;
+    border: 2px black inset;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: gray;
+}
+select:hover {
+    background-color: gray;
+}
